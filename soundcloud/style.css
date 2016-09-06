@@ -1,0 +1,81 @@
+body {
+    font-family: Helvetica;
+}
+.sc-player h3 {
+    margin: 0;
+    padding: 0;
+}
+.sc-trackslist {
+    list-style: none;
+    display: none;
+}
+.sc-artwork-list {
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sc-artwork-list li {
+    display: none;
+}
+
+.sc-artwork-list .active {
+    display: block;
+}
+.sc-time-span {
+    position: relative;
+    float: left;
+    width: calc(100% - 80px);
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.sc-time-indicators {
+    float: left;
+}
+
+.sc-player {
+    width: 100%;
+    background: #fff;
+    height:200px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.sc-buffer, .sc-played, .sc-waveform-container {
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.sc-waveform-container{
+    background:#F0F0F0;
+    width: 100%;
+}
+.sc-buffer {
+    background:#D0D0D0;
+}
+.sc-played {
+    background: red;
+}
+
+/* CONTROLS */
+.sc-controls {
+    float: left;
+}
+
+.playing .sc-play, .sc-pause.hidden {
+    display: none;
+}
+
+.playing .sc-pause.hidden {
+    display: inline-block;
+}
+
+.sc-player a, .sc-time-indicators {
+    color: #D0D0D0;
+    text-decoration: none;
+    font-weight: 300;
+}
